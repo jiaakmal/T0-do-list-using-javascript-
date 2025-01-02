@@ -1,0 +1,100 @@
+:root {
+    --background: #000430;
+    --secondaryBackground: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  body{
+    background-color: var(--background);
+    color: var(--text);
+  }
+  .to-do-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    max-width: 400px;
+    margin:  120px auto 0 auto;
+}
+.title{
+    padding: 20px 30px;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+}
+form{
+margin-top: 50px;
+width: 100%;
+display: flex;
+}
+input{
+    flex:1;
+    padding: 10px;
+    border-radius:10px;
+    border: 2px solid var(--purple);
+    background: var(--secondaryBackground);
+}
+button{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid var(--purple);
+    background: var(--purple);
+    color: var(--text);
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size:23px ;
+}
+ul{
+  list-style: none;
+}
+.task-list{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-top:30px ;
+  width: 100%;
+}
+.taskItem{
+  display: flex;
+  padding: 10px;
+  background-color: var(--secondaryBackground);
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.task{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.task input{
+  height: 20px;
+  width: 20px;
+}
+.icons img{
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  transition: transform 0.2s ease;
+  margin:0 10px;
+}
+.completed p{
+  text-decoration: line-through;
+  color: var(--teal);
+}
+
